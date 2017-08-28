@@ -26,16 +26,23 @@ body{
 	background-repeat: no-repeat;
 	padding-bottom: 5%;
 }
-.works{
+.res{
+	padding-top:20%;
+	background-color: black;
+	background-image: url("Images/background4blur.jpg");
+	background-color:black;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+div.works{
 	background-color: black;
 	background-image: url("Images/lion.jpg");
 	background-size: cover;
 	background-position: center 30%;
 	background-repeat: no-repeat;
 }
-.res{
-	padding-top:5%;
-	background-color: black;
+ul.works{
+	margin-top: 15%;
 }
 h1{
 	margin-top: 8%;
