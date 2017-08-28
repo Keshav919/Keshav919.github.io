@@ -77,7 +77,7 @@ a.link{
 	font-weight: bold;
 	font-style: italic;
 }
-a.dlink, a.bar:hover, a.link:hover{
+a.dlink:hover, a.bar:hover, a.link:hover{
 	color: white;
 }
 img{
