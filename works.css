@@ -1,0 +1,16 @@
+.projects{
+	background-image: url("Images/projectsbackground.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.cooking{
+	background-image:url("Images/cookingbackgroundblur.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.paintings{
+	background-image:url("Images/paintingsbackgroundblur.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center top;
+}
