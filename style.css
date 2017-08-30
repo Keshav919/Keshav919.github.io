@@ -6,7 +6,7 @@ body{
 }
 .navbar{
 	font-size: 36px;
-	}
+}
 .intro{
 	margin-top: 0px;
 	padding-bottom: 3%;
@@ -47,8 +47,8 @@ div.works{
 ul.works{
 	margin-top: 8%;
 }
-ul.res{
-	margin-top: 5%;
+ul li.works{
+	display: inline;
 }
 h1{
 	margin-top: 8%;
@@ -62,6 +62,26 @@ h1.name{
 }
 h2{
 	font-size: 30px;
+}
+h2.works{
+	width:30%;
+	padding-top: 1%;
+	padding-bottom: 1%;
+	margin-left: 34%;
+	border-color: #cccccc;
+	border-radius: 8px;
+	border-style: solid;
+}
+ul.res{
+	margin-top: 5%;
+}
+i#res{
+	padding-right: 3%;
+	padding-left: 3%;
+	padding-bottom: 0.5%;
+	border-color: #cccccc;
+	border-radius: 12px;
+	border-style: solid;
 }
 p{
 	display: block;
@@ -96,9 +116,12 @@ a.link{
 a.dlink:hover, a.bar:hover, a.link:hover{
 	color: white;
 }
+i#res:hover, h2.works:hover{
+	border-color: white;
+}
 img{
 	border-radius: 100%;
-	border:3px solid white;
+	border:3px solid #cccccc;
 	margin:0px;
 	vertical-align: middle;
 }

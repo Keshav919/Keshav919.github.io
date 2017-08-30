@@ -1,4 +1,21 @@
+body{
+	margin:0px;
+	padding:0;
+	color:#cccccc;
+	font-family: "courier new";
+}
+h1{
+	display: block;
+	text-align: center;
+	font-size: 78px;
+	font-weight: 100;
+}
+a{
+	color:#cccccc;
+	text-decoration: none;
+}
 .projects{
+	margin-top: 2%;
 	background-image: url("Images/projectsbackground.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -8,9 +25,37 @@
 	background-repeat: no-repeat;
 	background-size: cover;
 }
+.music{
+	background-image:url("Images/musicbackground.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center top;
+}
 .paintings{
 	background-image:url("Images/paintingsbackgroundblur.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center top;
+}
+p{
+	text-align: left;
+}
+img{
+	height:200px;
+	width:200px;
+	margin-left: 2%;
+	border-radius:8px;
+}
+a.dlink:hover{
+	color: white
+}
+li:hover{
+	color: white;
+}
+ul.songs{
+	text-align: left;
+	list-style-type: disk;
+}
+ul li{
+	font-size: 24px;
 }
