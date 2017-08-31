@@ -37,14 +37,39 @@ a{
 	background-size: cover;
 	background-position: center top;
 }
+figure{
+	width:25%;
+	border-left: 2px solid #cccccc;
+}
+figcaption{
+	margin-left: 10%;
+	width:250px;
+	height: 100px;
+
+}
+p.caption{
+	margin-top: 0px;
+}
+h4.caption{
+	text-decoration: underline;
+	margin-top: 1%;
+	padding-top: 1%;
+	margin-bottom: 1%;
+}
+img.caption{
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+img.caption:hover{
+	box-shadow: 0 4px 8px 4px rgba(0, 0, 0, 0.2), 0 6px 20px 4px rgba(0, 0, 0, 0.19);
+}
 p{
 	text-align: left;
 }
 img{
 	height:200px;
 	width:200px;
-	margin-left: 2%;
-	border-radius:8px;
+	border-radius:12px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 a.dlink:hover{
 	color: white
