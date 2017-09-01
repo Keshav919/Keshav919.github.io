@@ -21,9 +21,13 @@ a{
 	background-size: cover;
 }
 .cooking{
-	background-image:url("Images/cookingbackgroundblur.jpg");
+	background-image:url("Images/cookingbackground2blur.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
+}
+h1.cooking{
+	color:#808080;
+	background:none;
 }
 .music{
 	background-image:url("Images/musicbackground.jpg");
@@ -32,10 +36,14 @@ a{
 	background-position: center top;
 }
 .paintings{
-	background-image:url("Images/paintingsbackgroundblur.jpg");
+	background-image:url("Images/paintingsbackground2blur.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center top;
+}
+h1.paintings{
+	color:#cccccc;
+	background:none;
 }
 figure{
 	width:25%;
@@ -70,6 +78,9 @@ img{
 	width:200px;
 	border-radius:12px;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+img:hover{
+	box-shadow: 0 4px 8px 4px rgba(0, 0, 0, 0.2), 0 6px 20px 4px rgba(0, 0, 0, 0.19);
 }
 a.dlink:hover{
 	color: white
