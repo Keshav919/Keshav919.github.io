@@ -3,9 +3,12 @@
 <html>
 	<head>
 		<link rel="stylesheet" type= "text/css" href="works.css">
+		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 		<title>Works</title>
 	</head>
 	<body>
+		<script type="text/javascript" src="works.js">			
+		</script>
 		<div class="projects">
 			<a name="projects"><h1>Projects</h1></a>
 			<figure>
@@ -19,9 +22,13 @@
 		</div>
 		<div class="paintings">
 			<a name="paintings"><h1 class="paintings">Paintings</h1></a>
-			<img src="Images/painting3.JPG" title="Venice">
-			<img src="Images/painting1.jpg" title="Bennedict Cumberbatch">
-			<img src="Images/painting2.jpg" title="Ed Sheeran">
+			<img src="Images/painting3.JPG" title="Venice" onclick="enlarge1(this)">
+			<img src="Images/painting1.jpg" title="Bennedict Cumberbatch"onclick="enlarge1(this)">
+			<img src="Images/painting2.jpg" title="Ed Sheeran" onclick="enlarge1(this)">
+			<div id="displayarea1">
+				<i class="fa fa-times fa-4x" aria-hidden="true" onclick="small1()"></i>
+				<img id = "display1" src="#">
+			</div>
 			<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
 		</div>
 		<div class="music">
@@ -33,8 +40,12 @@
 		</div>
 		<div class="cooking">
 			<a name="cooking"><h1 class="cooking">Cooking</h1></a>
-			<img src="Images/cinnamonlatte.jpg" title="Cinnamon Latte">
-			<img src="Images/mangopudding.jpg" title="Mango Crumble">
+			<img src="Images/cinnamonlatte.jpg" title="Cinnamon Latte" onclick="enlarge2(this)">
+			<img src="Images/mangopudding.jpg" title="Mango Crumble" onclick="enlarge2(this)">
+			<div id="displayarea2">
+				<i class="fa fa-times fa-3x" aria-hidden="true" onclick="small2()"></i>
+				<img id = "display2" src="#">
+			</div>
 			<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
 		</div>
 	</body>

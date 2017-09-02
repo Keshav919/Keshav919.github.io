@@ -74,10 +74,17 @@ p{
 	text-align: left;
 }
 img{
+	display: inline;
 	height:200px;
 	width:200px;
 	border-radius:12px;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+img#display{
+	display: none;
+}
+div#displayarea1,div#displayarea2{
+	display:none;
 }
 img:hover{
 	box-shadow: 0 4px 8px 4px rgba(0, 0, 0, 0.2), 0 6px 20px 4px rgba(0, 0, 0, 0.19);
@@ -88,9 +95,25 @@ a.dlink:hover{
 li:hover{
 	color: white;
 }
+i{
+	margin-left: 20px;
+}
+i:hover{
+	color: white;
+}
 ul.songs{
 	text-align: left;
 	list-style-type: disk;
+}
+button{
+	padding:0px;
+	border: 0px;
+	border-radius: 12px;
+	background:none;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+button:hover{
+	box-shadow: 0 4px 8px 4px rgba(0, 0, 0, 0.2), 0 6px 20px 4px rgba(0, 0, 0, 0.19);
 }
 ul li{
 	font-size: 24px;
