@@ -17,8 +17,8 @@ function small1(){
 function enlarge2(elmnt){
 	document.getElementById("display2").style.display="block";
 	document.getElementById("display2").src=elmnt.src;
-	document.getElementById("display2").style.height="50%";
-	document.getElementById("display2").style.width="50%";
+	document.getElementById("display2").style.height="40%";
+	document.getElementById("display2").style.width="40%";
 	document.getElementById("display2").style.marginLeft="20%";
 	document.getElementById("display2").style.marginTop="20px";
 	document.getElementById("displayarea2").style.backgroundColor="#333333";
