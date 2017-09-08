@@ -11,9 +11,9 @@ body{
 	margin-top: 0px;
 	padding-bottom: 3%;
 	background-color:black;
-	background-image: url("Images/geiselblur.jpg");
+	background-image: url("Images/background5blur.jpg");
 	background-size: cover;
-	background-position: center 40%;
+	background-position: center 10%;
 	background-repeat: no-repeat;
 }
 .dp{
@@ -29,18 +29,18 @@ body{
 	padding-bottom: 5%;
 }
 div.res{
-	padding-top:20%;
+	padding-top:6%;
 	background-color: black;
 	background-image: url("Images/background4blur.jpg");
 	background-color:black;
 	background-size: cover;
-	background-position:40%;
+	background-position:40% 70%;
 	background-repeat: no-repeat;
 }
 div.works{
 	padding-top: 0.8%;
 	background-color: black;
-	background-image: url("Images/lion.jpg");
+	background-image: url("Images/lionblur.jpg");
 	background-size: cover;
 	background-position: center 30%;
 	background-repeat: no-repeat;
