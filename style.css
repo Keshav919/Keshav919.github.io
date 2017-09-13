@@ -29,7 +29,8 @@ body{
 	padding-bottom: 5%;
 }
 div.res{
-	padding-top:6%;
+	height:100vh;
+	padding-top:14%;
 	background-color: black;
 	background-image: url("Images/background4blur.jpg");
 	background-color:black;
@@ -38,7 +39,7 @@ div.res{
 	background-repeat: no-repeat;
 }
 div.works{
-	height: 140vh;
+	height: 130vh;
 	padding-top: 0.8%;
 	background-color: black;
 	background-image: url("Images/lionblur.jpg");
@@ -47,7 +48,7 @@ div.works{
 	background-repeat: no-repeat;
 }
 ul.works{
-	margin-top: 8%;
+	margin-top: 5%;
 }
 ul li.works{
 	display: inline;
