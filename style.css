@@ -5,7 +5,7 @@ body{
 	font-family: "courier new";
 }
 .navbar{
-	font-size: 120%;
+	font-size: 130%;
 }
 .intro{
 	height:118vh;
@@ -67,8 +67,8 @@ h2.works{
 	
 	padding-top: 1%;
 	padding-bottom: 1%;
-	margin-left: 30%;
-	margin-right: 30%;
+	margin-left: 20%;
+	margin-right: 20%;
 	font-size:200%;
 	border-color: #cccccc;
 	border-radius: 8px;
