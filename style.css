@@ -9,7 +9,6 @@ body{
 }
 .intro{
 	height:118vh;
-	width:118vw;
 	margin-top: 0%;
 	background-color:black;
 	background-image: url("Images/background5blur.jpg");
@@ -28,11 +27,9 @@ body{
 	background-size: cover;
 	background-repeat: no-repeat;
 	padding-bottom: 5%;
-	width: 118vw;
 }
 div.res{
 	height:100vh;
-	width:118vw;
 	padding-top:13%;
 	background-color: black;
 	background-image: url("Images/background4blur.jpg");
@@ -43,7 +40,6 @@ div.res{
 }
 div.works{
 	height: 130vh;
-	width:118vw;
 	padding-top: 0.8%;
 	background-color: black;
 	background-image: url("Images/lionblur.jpg");
@@ -68,10 +64,11 @@ h1.name{
 	margin-top:15%;
 }
 h2.works{
-	width:30%;
+	
 	padding-top: 1%;
 	padding-bottom: 1%;
-	margin-left: 34%;
+	margin-left: 30%;
+	margin-right: 30%;
 	font-size:200%;
 	border-color: #cccccc;
 	border-radius: 8px;
