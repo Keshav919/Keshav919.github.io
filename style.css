@@ -28,6 +28,10 @@ body{
 	background-repeat: no-repeat;
 	padding-bottom: 5%;
 }
+p#about{
+	margin-right: 2%;
+	margin-left: 2%;
+}
 div.res{
 	height:100vh;
 	padding-top:13%;
