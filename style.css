@@ -26,11 +26,23 @@ body{
 	background-color:black;
 	background-size: cover;
 	background-repeat: no-repeat;
-	padding-bottom: 5%;
+	padding-bottom: 3%;
+	padding-right: 7%;
+	padding-left: 7%;
 }
 p#about{
+	font-size:130%;
 	margin-right: 2%;
 	margin-left: 2%;
+}
+p#aboutbody{
+	text-indent: 5%;
+	font-size:130%;
+	margin-right: 2%;
+	margin-left: 2%;
+	text-align: justify;
+	margin-bottom: 0%;
+	margin-top: 0%;
 }
 div.res{
 	height:100vh;
