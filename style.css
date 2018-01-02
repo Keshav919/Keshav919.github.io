@@ -4,11 +4,36 @@ body{
 	color:#cccccc;
 	font-family: "courier new";
 }
+
+
 .navbar{
 	font-size: 130%;
 }
+ul.navbar{
+	padding-bottom: 0%;
+	margin: 0px;
+	padding-top: 2%;
+}
+li.navbarel1{
+	margin-right: 3%; 
+	color: #cccccc;
+	text-decoration: underline;
+}
+li.navbarel2{
+	color: #cccccc; 
+	margin-left:3%;
+	margin-right:1%;
+	text-decoration: underline;
+}
+li.navbarel3{
+	margin-left: 4%; 
+	color: #cccccc;
+	text-decoration: underline;
+}
+
+
 .intro{
-	height:118vh;
+	height: 100%;
 	margin-top: 0%;
 	background-color:black;
 	background-image: url("Images/background5blur.jpg");
@@ -16,13 +41,18 @@ body{
 	background-position: center 10%;
 	background-repeat: no-repeat;
 }
+h1.name{
+	font-size: 400%;
+	margin-top: 15%;
+}
 .dp{
 	padding-top: 5%;
 	padding-bottom: 0%;
 	text-align: center;
 }
 .about{
-	background-image: url("Images/background3blur.jpg");
+	height: 100%;
+	background-image: url("Images/aboutbackgroundblur.jpg");
 	background-color:black;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -45,17 +75,15 @@ p#aboutbody{
 	margin-top: 0%;
 }
 div.res{
-	height:100vh;
 	padding-top:13%;
 	background-color: black;
-	background-image: url("Images/background4blur.jpg");
+	background-image: url("Images/background3blur.jpg");
 	background-color:black;
 	background-size: cover;
 	background-position:40% 70%;
 	background-repeat: no-repeat;
 }
 div.works{
-	height: 130vh;
 	padding-top: 0.8%;
 	background-color: black;
 	background-image: url("Images/lionblur.jpg");
@@ -75,9 +103,6 @@ h1{
 	text-align: center;
 	font-size: 400%;
 	font-weight: 100;
-}
-h1.name{
-	margin-top:15%;
 }
 h2.works{
 	padding-top: 1%;

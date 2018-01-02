@@ -7,22 +7,57 @@ body{
 h1{
 	display: block;
 	text-align: center;
-	font-size: 78px;
+	font-size: 400%;
 	font-weight: 100;
 }
 a{
 	color:#cccccc;
 	text-decoration: none;
 }
+
 div.projects{
 	background-image: url("Images/projectsbackground.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
 	margin: 0px;
+	display: block;
+}
+div.projectsheader{
+	margin-left: auto;
+	margin-right: auto;
 }
 h1.projects{
-	margin: 0px;
+	margin-top: 0px;
+	text-align: center;
 }
+div.VRTracking,div.VRClub{
+	width:25%;
+	margin-left: 2%;
+	margin-right: 0%;
+	margin-top: 2%;
+}
+p.caption{
+	width: 50%;
+	margin-top: 0px;
+	margin-left: 1%;
+}
+h4.caption{
+	text-decoration: underline;
+	margin-top: 1%;
+	padding-top: 1%;
+	margin-bottom: 1%;
+	margin-left: 1%;
+}
+img.caption{
+	margin-left: 0px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+img.caption:hover{
+	margin-left: 0px;
+	box-shadow: 0 4px 8px 4px rgba(0, 0, 0, 0.2), 0 6px 20px 4px rgba(0, 0, 0, 0.19);
+}
+
+
 .cooking{
 	background-image:url("Images/cookingbackground2blur.jpg");
 	background-repeat: no-repeat;
@@ -31,6 +66,16 @@ h1.projects{
 h1.cooking{
 	color:#808080;
 	background:none;
+}
+a.cooking{
+	text-align: right;
+	display: inline-block;
+}
+i#cooking{
+	color: #808080;
+}
+i#cooking:hover{
+	color: #ffffff;
 }
 .music{
 	background-image:url("Images/musicbackground.jpg");
@@ -47,32 +92,6 @@ h1.cooking{
 h1.paintings{
 	color:#cccccc;
 	background:none;
-}
-
-figure{
-	width:25%;
-	border-left: 2px solid #cccccc;
-}
-figcaption{
-	margin-left: 10%;
-	width:250px;
-	height: 100px;
-
-}
-p.caption{
-	margin-top: 0px;
-}
-h4.caption{
-	text-decoration: underline;
-	margin-top: 1%;
-	padding-top: 1%;
-	margin-bottom: 1%;
-}
-img.caption{
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-img.caption:hover{
-	box-shadow: 0 4px 8px 4px rgba(0, 0, 0, 0.2), 0 6px 20px 4px rgba(0, 0, 0, 0.19);
 }
 p{
 	text-align: left;

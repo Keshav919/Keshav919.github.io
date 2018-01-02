@@ -1,0 +1,215 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.1 (30/4/2014)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[]{deedy-resume-openfont}
+
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\namesection{Keshav}{Rungta}{ \urlstyle{same}\url{http://keshavr.me} \\
+\href{mailto:krungta@ucsd.edu}{krungta@ucsd.edu} | (+1) 858.729.4125/ (+91) 801.739.3608
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.31\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education} 
+
+\subsection{University of California, San Diego}
+
+\descript{BS in Electrical Engineering}
+\location{Expected June 2020 | San Diego, CA}
+Jacobs School of Engineering \\
+\location{ Cum. GPA: 3.981 / 4.0 \\
+Major GPA: 3.981 / 4.0}
+\sectionsep
+\sectionsep
+
+\subsection{La Martiniere for Boys}
+\location{Grad. May 2016 |  Kolkata, India}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     LINKS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Links} 
+LinkedIn:// \href{https://www.linkedin.com/in/keshav-rungta-a29174152/}{\custombold{Keshav Rungta}} \\
+Github:// \href{https://github.com/Keshav919}{\custombold{Keshav919}} \\
+
+%Maybe reveal them in the future
+%Facebook:// \href{https://facebook.com/keshav.rungta.3}{\custombold{keshav.rungta.3}}\\
+%Twitter://  \href{https://twitter.com/keshrunedscmu}{\custombold{@keshrunedscmu}} \\
+
+\sectionsep
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     COURSEWORK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Coursework}
+
+\subsection{Undergraduate}
+\textbullet Components and Circuits Lab \\
+\textbullet Intro to Analog Design \\
+\textbullet Vector Calculus, Differential Equations + Linear Algebra\\
+\textbullet Intro to Digital Design \\
+\textbullet Mechanics + Electricity and Magnetism + Fluids, Thermodynamics, Optics \\
+\textbullet{} Intro to Computer Science \& OOP: Java
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Skills}
+\subsection{Programming}
+\location{Over 3000 lines:}
+Java  \\
+\location{Over 500 lines:}
+C \textbullet{} HTML \textbullet{} CSS \textbullet{} C\# \textbullet{} Python \\
+\location{Familiar:}
+C++ \textbullet{} JavaScript
+\sectionsep
+\subsection{LANGUAGES}
+English \textbullet{} Hindi \textbullet{} Bengali
+\sectionsep
+
+\subsection{Sports}
+ Golf \textbullet{} Table\-Tennis \textbullet{} Karate\\
+\sectionsep
+
+\subsection{Miscellaneous}
+Agile Software Development \textbullet{} Arduino \\
+Soldering \textbullet{} SolidWorks \textbullet{} Unity\\
+EagleCAD \textbullet{} MATLAB
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.66\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Experience}
+
+\runsubsection{UCSDVR Club}
+\descript{| Senior Programmer in Team Lucid}
+\descript{Dreams of Phillip Aisling - VR game to teach players Lucid Dreaming}
+\location{Jan 2017 – Sept 2017 | San Diego, CA} 
+\sectionsep
+\begin{tightemize} 
+\item Worked on the Character Control and Environment team to help make game on Lucid Dreaming for the Google Daydream
+\item Used Unity and C\# to design and develop the character movements, UI, scene management and character interaction
+\end{tightemize}
+\sectionsep
+
+\runsubsection{VRTracking}
+\descript{| Co-Developer}
+\descript{Move in VR environment without external cameras or sensors}
+\location{Jan 2017 | San Diego, CA}
+\begin{tightemize}
+\item Created tracking system that converted accelerometer data from phone to map position in VR environment
+\item Worked on data handling by finding way to convert acceleration to position
+\item Project placed 1st in UCSD Hack Day
+\end{tightemize}
+\sectionsep
+
+\runsubsection{ECE Tutoring}
+\descript{| Undergraduate Tutor ECE 5}
+\descript{Class showcases various spheres of EE: Controls, DSP, CAD, Communication, etc}
+\location{January 2018 - Present | San Diego, CA}
+\begin{tightemize}
+\item Worked in the makerstudio to help students with course work and lab work
+\item In charge of Advanced Programming and Simulink workshops
+\end{tightemize}
+\sectionsep
+
+\runsubsection{IEEE - MicroMouse}
+\descript{| Team Member}
+\descript{Car will find quickest route to center of any maze}
+\location{October 2017 - Present | San Diego, CA}
+\begin{tightemize}
+\item Made the schematics for the mouse and designed the circuitry using EagleCAD.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Park Clean-Up}
+\descript{| Co-Founder}
+\descript{Club of volunteers cleaned up one of the biggest parks in city}
+\location{April 2015 – June 2015 | Kolkata, India}
+\begin{tightemize}
+\item Rallied 40 students and joggers to cause
+\item Event grew to a city wide endeavour with help from Telegraph \href{http://tinyurl.com/q2nlgzk}{(http://tinyurl.com/q2nlgzk)}
+\end{tightemize}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     AWARDS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Awards} 
+\begin{tabular}{rll}
+2017	     & 1\textsuperscript{st}  & UCSD Hack Day\\
+\end{tabular}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     ORGANISATIONS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Organisations}
+\begin{tabular}{rll}
+2017    & Eta Kappa Nu (HKN) | Kappa Psi &Student Member\\
+2017   & IEEE  & Staff Member\\
+\end{tabular}
+\sectionsep
+
+\end{minipage} 
+\end{document}  \documentclass[]{article}
