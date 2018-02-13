@@ -58,7 +58,7 @@ img.caption:hover{
 }
 
 
-.cooking{
+div.cooking{
 	background-image:url("Images/cookingbackground2blur.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -83,7 +83,7 @@ i#cooking:hover{
 	background-size: cover;
 	background-position: center top;
 }
-.paintings{
+div.paintings{
 	background-image:url("Images/paintingsbackground2blur.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -92,6 +92,9 @@ i#cooking:hover{
 h1.paintings{
 	color:#cccccc;
 	background:none;
+}
+img.first{
+	margin-left: 1%;
 }
 p{
 	text-align: left;
