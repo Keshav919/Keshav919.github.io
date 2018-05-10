@@ -7,10 +7,12 @@ body{
 
 
 .navbar{
-	font-size: 130%;
+	background-color: #222222;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	font-size: 200%;
 }
 ul.navbar{
-	padding-bottom: 0%;
+	padding-bottom: 1.5%;
 	margin: 0px;
 	padding-top: 2%;
 }
@@ -30,7 +32,6 @@ li.navbarel3{
 	color: #cccccc;
 	text-decoration: underline;
 }
-
 
 .intro{
 	height: 100%;
@@ -163,7 +164,7 @@ i#res:hover, h2.works:hover{
 }
 img{
 	border-radius: 100%;
-	border:3px solid #cccccc;
+	border:2px solid #555555;
 	margin:0px;
 	vertical-align: middle;
 }

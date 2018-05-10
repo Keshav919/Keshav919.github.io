@@ -1,6 +1,6 @@
 body{
 	margin:0px;
-	padding:0;
+	padding:0px;
 	color:#cccccc;
 	font-family: "courier new";
 }
@@ -13,6 +13,45 @@ h1{
 a{
 	color:#cccccc;
 	text-decoration: none;
+}
+.navbar{
+	background-color: #222222;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	font-size: 130%;
+	height: 100%;
+	margin-top: 0%;
+	background-size: cover;
+	background-position: center 10%;
+	background-repeat: no-repeat;
+}
+ul.navbar{
+	padding-bottom: 1%;
+	margin: 0px;
+	padding-top: 0.5%;
+}
+li.navbarel0{
+	text-align: left;
+}
+li.navbarel1{
+	margin-right: 3%; 
+	color: #cccccc;
+	text-decoration: underline;
+}
+li.navbarel2{
+	color: #cccccc; 
+	margin-left:2.5%;
+	margin-right:1%;
+	text-decoration: underline;
+}
+li.navbarel3{
+	margin-left: 4.25%; 
+	color: #cccccc;
+	text-decoration: underline;
+}
+li.navbarel4{
+	margin-left: 4.5%; 
+	color: #cccccc;
+	text-decoration: underline;
 }
 
 div.projects{
@@ -62,17 +101,19 @@ div.cooking{
 	background-image:url("Images/cookingbackground2blur.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
+	background-position: center top;
 }
 h1.cooking{
 	color:#808080;
 	background:none;
 }
 a.cooking{
-	text-align: right;
+	width: 100%;
+	text-align: center;
 	display: inline-block;
 }
 i#cooking{
-	color: #808080;
+	color: #cccccc;
 }
 i#cooking:hover{
 	color: #ffffff;
@@ -115,7 +156,7 @@ div#displayarea1,div#displayarea2{
 img:hover{
 	box-shadow: 0 4px 8px 4px rgba(0, 0, 0, 0.2), 0 6px 20px 4px rgba(0, 0, 0, 0.19);
 }
-a.dlink:hover{
+a.dlink:hover, a.bar:hover{
 	color: white
 }
 li:hover{
@@ -123,6 +164,10 @@ li:hover{
 }
 i{
 	margin-left: 20px;
+}
+i#tophome{
+	margin-left: 0px;
+	text-align: left;
 }
 i:hover{
 	color: white;
@@ -142,5 +187,19 @@ button:hover{
 	box-shadow: 0 4px 8px 4px rgba(0, 0, 0, 0.2), 0 6px 20px 4px rgba(0, 0, 0, 0.19);
 }
 ul li{
-	font-size: 24px;
+	display: inline;
+	margin:1%;
+	font-size: 150%;
+}
+ul{
+	margin-top:15%;
+	list-style-type: none;
+	display:block;
+	padding:0;
+	text-align: center;
+	padding-bottom:3%;
+	margin-bottom: 5%;
+}
+ul li.songs{
+	list-style-type: disc;
 }
