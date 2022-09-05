@@ -1,0 +1,13 @@
+body {
+    background-image: url(images/pb_grad_vert.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#mainHeading {
+    background-color: aquamarine;
+    width: 25%;
+    position: absolute;
+    top: 2%;
+    right: 0.5%;
+    text-align: center;
+}
