@@ -1,13 +1,32 @@
-body {
+html, body {
+    height:100%;
+    width:100%;
+    margin:0;
+    padding:0;
+}
+div#landingPage {
+    height: 100%;
     background-image: url(images/pb_grad_vert.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
+    position: relative;
 }
-#mainHeading {
+div#mainHeadingHorizontal {
     background-color: aquamarine;
     width: 25%;
     position: absolute;
     top: 2%;
     right: 0.5%;
+    text-align: center;
+}
+div#mainHeadingVertical {
+    background-color: grey;
+    width: 30%;
+    height: 40%;
+    position: absolute;
+    margin-top: -20%;
+    margin-left: -15%;;
+    top: 50%;
+    left: 50%;
     text-align: center;
 }
