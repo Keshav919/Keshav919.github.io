@@ -4,6 +4,7 @@ html, body {
     margin:0;
     padding:0;
 }
+
 div#landingPage {
     height: 100%;
     background-image: url(images/pb_grad_vert.jpeg);
@@ -20,13 +21,32 @@ div#mainHeadingHorizontal {
     text-align: center;
 }
 div#mainHeadingVertical {
-    background-color: grey;
-    width: 30%;
-    height: 40%;
+    background-color: rgba(200, 200, 200, 0.8);
+    width: 80%;
     position: absolute;
-    margin-top: -20%;
-    margin-left: -15%;;
+    margin-left: -40.5%;
+    top: 35%;
+    left: 50%;
+    text-align: center;
+    border-radius: 15px;
+}
+
+div#mainInfo{
+    background-color: rgba(200, 200, 200, 0.5);
+    width: 80%;
+    position: absolute;
+    margin-left: -40.5%;
     top: 50%;
     left: 50%;
     text-align: center;
+    border-radius: 15px;
+}
+
+div.scrollDir {
+    background-color: rgba(200, 200, 200, 0.5);
+    width: 10%;
+    height: 10%;
+    position: absolute;
+    top: 89%;
+    left: 89%;
 }
