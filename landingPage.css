@@ -14,11 +14,11 @@ div#landingPage {
 }
 div#mainHeadingHorizontal {
     background-color: aquamarine;
-    width: 25%;
+    width: 30%;
+    height: 8%;
     position: absolute;
     top: 2%;
     right: 0.5%;
-    text-align: center;
 }
 div#mainHeadingVertical {
     background-color: rgba(200, 200, 200, 0.8);
@@ -27,8 +27,22 @@ div#mainHeadingVertical {
     margin-left: -40.5%;
     top: 40%;
     left: 50%;
-    text-align: center;
     border-radius: 15px;
+    text-align: center;
+}
+h1#name{
+  position: absolute;
+  left: 4%;
+  top: calc(50% - 1.85vh);
+  font-size: 3.7vh;
+  margin-top: 0%;
+  margin-bottom: 0%;
+}
+i#hamburger{
+  position: absolute;
+  right: 1.3vw;
+  top: calc(6.3vh - 1.85vh);
+  font-size: 3.7vh;
 }
 
 div#mainInfo{

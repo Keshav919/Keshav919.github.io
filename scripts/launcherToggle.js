@@ -1,4 +1,4 @@
-function toggleDiv() {
+function toggleLauncher() {
     var launcher = document.getElementById("launcher");
     var timeline = document.getElementsByClassName("timeline")[0];
 
