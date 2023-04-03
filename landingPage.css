@@ -41,8 +41,8 @@ h1#name{
 i#hamburger{
   position: absolute;
   right: 1.3vw;
-  top: calc(6.3vh - 1.85vh);
-  font-size: 3.7vh;
+  top: calc(6.3vh - 1.5vw);
+  font-size: 3vw;
 }
 
 div#mainInfo{
@@ -54,6 +54,22 @@ div#mainInfo{
     left: 50%;
     text-align: center;
     border-radius: 15px;
+}
+
+div#menu {
+  position: absolute;
+  right: 0vw;
+  background-color: antiquewhite;
+  height: 100vh;
+  width: 35vw;
+  display: none;
+}
+
+h1#menu {
+  position: absolute;
+  left: calc(17.5vw - 3vw);
+  top: calc(6.3vh - 1.5vw);
+  font-size: 3vw;
 }
 
 div#launcher{
