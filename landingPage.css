@@ -73,7 +73,7 @@ h1#menu {
 }
 
 h1#menuOption {
-  padding-bottom: 7vh;
+  padding-top: 7vh;
   font-size: 3vw;
 }
 
@@ -84,7 +84,7 @@ a:active {color:#000000;}  /* selected link (blue in the split second which you 
 
 div#menuList {
   position: absolute;
-  top: 40%;
+  top: 30%;
   left: calc(17.5vw - 5vw);
   text-align: center;
 }
