@@ -67,9 +67,26 @@ div#menu {
 
 h1#menu {
   position: absolute;
-  left: calc(17.5vw - 3vw);
+  left: calc(17.5vw - 4vw);
   top: calc(6.3vh - 1.5vw);
+  font-size: 4vw;
+}
+
+h1#menuOption {
+  padding-bottom: 7vh;
   font-size: 3vw;
+}
+
+a:link {color:#000000;}    /* unvisited link is black*/
+a:visited {color:#000000;} /* visited link is black (reverse the color back to black)*/
+a:hover {color:#000000;}   /* mouse over link (blue when mouse over)*/
+a:active {color:#000000;}  /* selected link (blue in the split second which you loading the page.)*/
+
+div#menuList {
+  position: absolute;
+  top: 40%;
+  left: calc(17.5vw - 5vw);
+  text-align: center;
 }
 
 div#launcher{
