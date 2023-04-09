@@ -4,7 +4,7 @@ body {
 
 i {
     position: absolute;
-    left: calc(50% - 3vw);
+    left: calc(50% - 3.8vw);
     top: 30%;
 }
 

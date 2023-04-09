@@ -1,10 +1,10 @@
 body {
-    background-color: rgb(228, 204, 148);
+    background-color: rgb(139, 169, 195);
 }
 
 i {
     position: absolute;
-    left: calc(50% - 3vw);
+    left: calc(50% - 3.8vw);
     top: 30%;
 }
 
