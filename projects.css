@@ -1,0 +1,15 @@
+body {
+    background-color: rgb(139, 169, 195);
+}
+
+i {
+    position: absolute;
+    left: calc(50% - 3vw);
+    top: 30%;
+}
+
+h1 {
+    position: absolute;
+    left: calc(50% - 11vw);
+    top: 50%;
+}
