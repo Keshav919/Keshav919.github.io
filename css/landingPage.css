@@ -21,6 +21,7 @@ div#mainHeadingHorizontal {
     position: absolute;
     top: 2%;
     right: 0.5%;
+    border-radius: 10px;
 }
 div#mainHeadingVertical {
     background-color: rgba(200, 200, 200, 0.8);
@@ -42,11 +43,12 @@ h1#name{
 }
 i#hamburger{
   position: sticky;
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(255, 255, 255, 0.6);
   left: 94vw;
   top: calc(6.3vh - 4vh);
   padding: 1vw;
   font-size: 3vw;
+  border-radius: 10px;
 }
 
 div#mainInfo{
@@ -99,7 +101,7 @@ div#launcher{
   position: relative;
   top: calc(70% - 25px);
   left: calc(50% - 25px);
-  background-color: rgba(191, 211, 227, 0.9);
+  background-color: rgba(200, 200, 200, 0.8);
   border-radius: 50%;
   transform: rotate(0deg);
   z-index: 2;
@@ -111,7 +113,7 @@ div#launcher:hover{
   position: relative;
   top: calc(70% - 27px);
   left: calc(50% - 27px);
-  background-color: rgba(191, 211, 227, 0.9);
+  background-color: rgba(200, 200, 200, 0.8);
   border-radius: 50%;
   transform: rotate(0deg);
 }
