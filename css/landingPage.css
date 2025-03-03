@@ -99,7 +99,7 @@ div#launcher{
   position: relative;
   top: calc(70% - 25px);
   left: calc(50% - 25px);
-  background-color: rgb(105, 88, 88);
+  background-color: rgba(191, 211, 227, 0.9);
   border-radius: 50%;
   transform: rotate(0deg);
   z-index: 2;
@@ -111,7 +111,7 @@ div#launcher:hover{
   position: relative;
   top: calc(70% - 27px);
   left: calc(50% - 27px);
-  background-color: rgb(105, 88, 88);
+  background-color: rgba(191, 211, 227, 0.9);
   border-radius: 50%;
   transform: rotate(0deg);
 }
