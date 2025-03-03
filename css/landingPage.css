@@ -24,7 +24,7 @@ div#mainHeadingHorizontal {
     border-radius: 10px;
 }
 div#mainHeadingVertical {
-    background-color: rgba(200, 200, 200, 0.8);
+    background-color: rgba(200, 200, 200, 0.9);
     width: 80%;
     position: absolute;
     margin-left: -40.5%;
@@ -96,24 +96,24 @@ div#menuList {
 }
 
 div#launcher{
-  height: 50px;
-  width: 50px;
+  height: 54px;
+  width: 54px;
   position: relative;
-  top: calc(70% - 25px);
-  left: calc(50% - 25px);
-  background-color: rgba(200, 200, 200, 0.8);
+  top: calc(70% - 27px);
+  left: calc(50% - 27px);
+  background-color: rgba(200, 200, 200, 0.9);
   border-radius: 50%;
   transform: rotate(0deg);
   z-index: 2;
 }
 
 div#launcher:hover{
-  height: 54px;
-  width: 54px;
+  height: 58px;
+  width: 58px;
   position: relative;
-  top: calc(70% - 27px);
-  left: calc(50% - 27px);
-  background-color: rgba(200, 200, 200, 0.8);
+  top: calc(70% - 29px);
+  left: calc(50% - 29px);
+  background-color: rgba(200, 200, 200, 0.9);
   border-radius: 50%;
   transform: rotate(0deg);
 }
