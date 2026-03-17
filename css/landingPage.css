@@ -143,6 +143,18 @@ div#launcher:hover > div#rightArrow{
 * {
     box-sizing: border-box;
 }
+
+div.TextContent {
+  width: 16vw;
+  display: inline;
+  float: left;
+  margin-right: 1vw;
+}
+
+img.ImageContent {
+  width: 16vw;
+  border-radius: 8px;
+}
   
 /* The actual timeline (the vertical ruler) */
 .timeline {
@@ -169,7 +181,6 @@ div#launcher:hover > div#rightArrow{
 div#end.bar {
   position: absolute;
   width: 8px;
-  height: 5%;
   background-color: #474e5d;
   ;
   left: calc(50% - 4px);
