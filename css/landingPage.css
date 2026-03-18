@@ -19,7 +19,7 @@ div#landingPage {
     position: relative;
 }
 div#mainHeadingHorizontal {
-    background-color: aquamarine;
+    background-color: rgba(200, 200, 200, 0.7);
     width: 30%;
     height: 9.9%;
     position: absolute;
@@ -28,7 +28,7 @@ div#mainHeadingHorizontal {
     border-radius: 10px;
 }
 div#mainHeadingVertical {
-    background-color: rgba(200, 200, 200, 0.9);
+    background-color: rgba(200, 200, 200, 0.7);
     width: 80%;
     position: absolute;
     margin-left: -40.5%;
