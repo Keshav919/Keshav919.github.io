@@ -19,7 +19,7 @@ div#landingPage {
     position: relative;
 }
 div#mainHeadingHorizontal {
-    background-color: rgba(200, 200, 200, 0.7);
+    background-color: aquamarine;
     width: 30%;
     height: 9.9%;
     position: absolute;
@@ -28,7 +28,7 @@ div#mainHeadingHorizontal {
     border-radius: 10px;
 }
 div#mainHeadingVertical {
-    background-color: rgba(200, 200, 200, 0.7);
+    background-color: rgba(200, 200, 200, 0.9);
     width: 80%;
     position: absolute;
     margin-left: -40.5%;
@@ -47,7 +47,7 @@ h1#name{
 }
 i#hamburger{
   position: sticky;
-  background-color: rgb(255, 255, 255, 0.5);
+  background-color: rgb(255, 255, 255, 0.6);
   left: 94vw;
   top: calc(6.3vh - 4vh);
   padding: 1vw;
@@ -109,6 +109,7 @@ div#launcher{
   border-radius: 50%;
   transform: rotate(0deg);
   z-index: 2;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.5);
 }
 
 div#launcher:hover{
@@ -170,7 +171,6 @@ img.ImageContent {
   left: 0;
   z-index: 1;
   top: 100%;
-  padding-top: 4vh;
 }
 
 /* The actual timeline (the vertical ruler) */
