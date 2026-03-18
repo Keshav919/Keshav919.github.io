@@ -4,6 +4,10 @@ html, body {
     margin:0;
     padding:0;
     background-color: #474e5d;
+    background-image: url(../images/code.png);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
     font-family: Helvetica, sans-serif;
 }
 
@@ -15,7 +19,7 @@ div#landingPage {
     position: relative;
 }
 div#mainHeadingHorizontal {
-    background-color: aquamarine;
+    background-color: rgba(200, 200, 200, 0.7);
     width: 30%;
     height: 9.9%;
     position: absolute;
@@ -24,7 +28,7 @@ div#mainHeadingHorizontal {
     border-radius: 10px;
 }
 div#mainHeadingVertical {
-    background-color: rgba(200, 200, 200, 0.9);
+    background-color: rgba(200, 200, 200, 0.7);
     width: 80%;
     position: absolute;
     margin-left: -40.5%;
@@ -43,7 +47,7 @@ h1#name{
 }
 i#hamburger{
   position: sticky;
-  background-color: rgb(255, 255, 255, 0.6);
+  background-color: rgb(255, 255, 255, 0.5);
   left: 94vw;
   top: calc(6.3vh - 4vh);
   padding: 1vw;
@@ -83,10 +87,10 @@ h1#menuOption {
   font-size: 3vw;
 }
 
-a:link {color:#000000;}    /* unvisited link is black*/
-a:visited {color:#000000;} /* visited link is black (reverse the color back to black)*/
-a:hover {color:#000000;}   /* mouse over link (blue when mouse over)*/
-a:active {color:#000000;}  /* selected link (blue in the split second which you loading the page.)*/
+a:link {color:#000000; text-decoration: none;}
+a:visited {color:#000000; text-decoration: none;}
+a:hover {color:#000000; text-decoration: none;}
+a:active {color:#000000; text-decoration: none;}
 
 div#menuList {
   position: absolute;
@@ -145,25 +149,28 @@ div#launcher:hover > div#rightArrow{
 }
 
 div.TextContent {
-  width: 16vw;
-  display: inline;
-  float: left;
-  margin-right: 1vw;
+  flex: 7;
+  min-width: 0;
+  padding: 8px;
+  box-sizing: border-box;
 }
 
 img.ImageContent {
-  width: 16vw;
+  width: auto;
+  max-width: 30%;
   border-radius: 8px;
+  display: block;
+  flex-shrink: 0;
 }
   
 /* The actual timeline (the vertical ruler) */
 .timeline {
   position: absolute;
-  /* margin: 0 auto; */
-  width: 90vw;
+  width: 100vw;
+  left: 0;
   z-index: 1;
   top: 100%;
-  left: calc(50% - 45vw);
+  padding-top: 4vh;
 }
 
 /* The actual timeline (the vertical ruler) */
@@ -244,9 +251,9 @@ div#end.container::after {
   width: 0;
   z-index: 1;
   right: 30px;
-  border: medium solid white;
+  border: medium solid rgba(255, 255, 255, 0.08);
   border-width: 10px 0 10px 10px;
-  border-color: transparent transparent transparent white;
+  border-color: transparent transparent transparent rgba(255, 255, 255, 0.08);
 }
 
 /* Add arrows to the right container (pointing left) */
@@ -258,9 +265,9 @@ div#end.container::after {
   width: 0;
   z-index: 1;
   left: 30px;
-  border: medium solid white;
+  border: medium solid rgba(255, 255, 255, 0.08);
   border-width: 10px 10px 10px 0;
-  border-color: transparent white transparent transparent;
+  border-color: transparent rgba(255, 255, 255, 0.08) transparent transparent;
 }
 
 /* Fix the circle for containers on the right side */
@@ -270,8 +277,50 @@ div#end.container::after {
 
 /* The actual content */
 .content {
-  padding: 20px 30px;
-  background-color: white;
-  position: relative;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(1px) saturate(120%);
+  -webkit-backdrop-filter: blur(1px) saturate(120%);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
   border-radius: 6px;
+  position: relative;
+  color: #ffffff;
+  box-sizing: border-box;
+}
+
+/* When content has an image, the anchor wraps both — make it flex */
+.content > a {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 1px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.content h2 {
+  color: #ffffff;
+  margin-top: 0;
+  text-shadow: 0 1px 4px rgba(0,0,0,0.4);
+}
+
+.content p {
+  color: rgba(255, 255, 255, 0.85);
+  margin-bottom: 0;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.35);
+}
+
+/* Reset launcher position when inside scrollup so it doesn't inherit calc(70%) offsets */
+.scrollup > #launcher {
+  position: relative;
+  top: 0;
+  left: 0;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.5);
+}
+
+.scrollup > #launcher:hover {
+  position: relative;
+  top: 0;
+  left: 0;
 }
