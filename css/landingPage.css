@@ -159,6 +159,8 @@ div.TextContent {
 img.ImageContent {
   width: auto;
   max-width: 30%;
+  max-height: 20vw;
+  height: auto !important;
   border-radius: 8px;
   display: block;
   flex-shrink: 0;
@@ -324,4 +326,48 @@ div#end.container::after {
   position: relative;
   top: 0;
   left: 0;
+}
+
+/* ── Portrait / mobile: matches JS condition height + 120 > width ── */
+@media (max-aspect-ratio: 11/10) {
+
+  /* All containers take full width, stacked */
+  .container {
+    width: 100%;
+    left: 0;
+    padding: 10px 20px;
+  }
+
+  /* Move the timeline line to the left edge */
+  .timeline::after {
+    left: 20px;
+    margin-left: 0;
+  }
+
+  /* Circles sit on the left line */
+  .container::after,
+  div#end.container::after {
+    left: 3px;
+    right: auto;
+  }
+
+  /* Arrows all point left */
+  .left::before,
+  .right::before {
+    left: 30px;
+    right: auto;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent rgba(255, 255, 255, 0.08) transparent transparent;
+  }
+
+  /* Right containers: reset left offset */
+  .right {
+    left: 0;
+  }
+
+  /* Images: constrain to width-relative size */
+  img.ImageContent {
+    max-height: 20vw;
+    max-width: 35%;
+  }
 }
