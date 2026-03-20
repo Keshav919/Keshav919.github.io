@@ -344,7 +344,7 @@ div#end.container::after {
 
   /* Shift landing page background to show more of the right side */
   div#landingPage {
-    background-position: 35% center;
+    background-position: 40% center;
   }
 
   /* Reposition name heading to center of screen */
