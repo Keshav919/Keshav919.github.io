@@ -342,6 +342,11 @@ div#end.container::after {
 /* ── Portrait / mobile: matches JS condition height + 120 > width ── */
 @media (max-aspect-ratio: 11/10) {
 
+  /* Shift landing page background to show more of the right side */
+  div#landingPage {
+    background-position: 35% center;
+  }
+
   /* Reposition name heading to center of screen */
   div#mainHeadingHorizontal {
     width: 80%;
