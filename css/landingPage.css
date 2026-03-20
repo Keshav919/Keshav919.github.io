@@ -20,12 +20,18 @@ div#landingPage {
 }
 div#mainHeadingHorizontal {
     background-color: rgba(200, 200, 200, 0.7);
-    width: 30%;
+    width: auto;
+    max-width: calc(100% - 9.9vh - 1.5%);
     height: 9.9%;
     position: absolute;
     top: 2%;
-    right: 0.5%;
+    right: calc(9.9vh + 1%);
     border-radius: 10px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    padding: 0 16px;
+    white-space: nowrap;
 }
 div#mainHeadingVertical {
     background-color: rgba(200, 200, 200, 0.7);
@@ -36,20 +42,18 @@ div#mainHeadingVertical {
     left: 50%;
     border-radius: 15px;
     text-align: center;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.5);
 }
 h1#name{
-  position: absolute;
-  left: 4%;
-  top: calc(50% - 1.85vh);
+  position: static;
   font-size: 3.7vh;
-  margin-top: 0%;
-  margin-bottom: 0%;
+  margin: 0;
 }
 i#hamburger{
-  position: sticky;
-  background-color: rgb(255, 255, 255, 0.6);
-  left: calc(99.5% - 9.9vh);
+  position: fixed;
   top: 2vh;
+  right: 0.5%;
+  background-color: rgb(255, 255, 255, 0.6);
   padding: 0;
   width: 9.9vh;
   height: 9.9vh;
@@ -58,6 +62,8 @@ i#hamburger{
   display: flex;
   align-items: center;
   justify-content: center;
+  z-index: 50;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.5);
 }
 
 div#mainInfo{
@@ -105,11 +111,11 @@ div#menuList {
 }
 
 div#launcher{
-  width: 9vh;
-  height: 9vh;
+  height: 54px;
+  width: 54px;
   position: relative;
-  top: calc(70% - 4.5vh);
-  left: calc(50% - 4.5vh);
+  top: calc(70% - 27px);
+  left: calc(50% - 27px);
   background-color: rgba(200, 200, 200, 0.9);
   border-radius: 50%;
   transform: rotate(0deg);
@@ -118,11 +124,11 @@ div#launcher{
 }
 
 div#launcher:hover{
-  height: 9.4vh;
-  width: 9.4vh;
+  height: 58px;
+  width: 58px;
   position: relative;
-  top: calc(70% - 4.7vh);
-  left: calc(50% - 4.7vh);
+  top: calc(70% - 29px);
+  left: calc(50% - 29px);
   background-color: rgba(200, 200, 200, 0.9);
   border-radius: 50%;
   transform: rotate(0deg);
@@ -130,22 +136,22 @@ div#launcher:hover{
 
 div#rightArrow{
   border: solid black;
-  border-width: 0 4px 4px 0;
-  top: calc(50% - 11px - 2px);
-  left: calc(50% - 14px - 2px);
+  border-width: 0 3px 3px 0;
+  top: calc(50% - 9px - 1.5px);
+  left: calc(50% - 12px - 1.5px);
   display: inline-block;
-  padding: 11px;
+  padding: 9px;
   position: absolute;
   transform: rotate(-45deg);
 }
 
 div#launcher:hover > div#rightArrow{
   border: solid black;
-  border-width: 0 4px 4px 0;
-  top: calc(50% - 15px - 2px);
-  left: calc(50% - 18px - 2px);
+  border-width: 0 3px 3px 0;
+  top: calc(50% - 11px - 1.5px);
+  left: calc(50% - 14px - 1.5px);
   display: inline-block;
-  padding: 14px;
+  padding: 11px;
   position: absolute;
   transform: rotate(-45deg);
 }
@@ -338,26 +344,25 @@ div#end.container::after {
 
   /* Shift landing page background to show more of the right side */
   div#landingPage {
-    background-position: 40% center;
+    background-position: 70% center;
   }
 
   /* Reposition name heading to center of screen */
   div#mainHeadingHorizontal {
     width: 80%;
+    max-width: 80%;
     height: auto;
     top: 40%;
     left: 10%;
     right: auto;
     border-radius: 15px;
     text-align: center;
-    background-color: rgba(200, 200, 200, 0.7);
+    padding: 10px 20px;
+    justify-content: center;
   }
 
   h1#name {
-    position: static;
     font-size: 5vw;
-    margin: 0;
-    padding: 10px 0;
   }
 
   /* All containers full width, stacked.
