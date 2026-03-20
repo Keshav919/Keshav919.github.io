@@ -48,11 +48,16 @@ h1#name{
 i#hamburger{
   position: sticky;
   background-color: rgb(255, 255, 255, 0.6);
-  left: 94vw;
-  top: calc(6.3vh - 4vh);
-  padding: 1vw;
-  font-size: 3vw;
+  left: calc(99.5% - 9.9vh);
+  top: 2vh;
+  padding: 0;
+  width: 9.9vh;
+  height: 9.9vh;
+  font-size: 5vh;
   border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 div#mainInfo{
@@ -331,11 +336,31 @@ div#end.container::after {
 /* ── Portrait / mobile: matches JS condition height + 120 > width ── */
 @media (max-aspect-ratio: 11/10) {
 
-  /* All containers take full width, stacked */
+  /* Reposition name heading to center of screen */
+  div#mainHeadingHorizontal {
+    width: 80%;
+    height: auto;
+    top: 40%;
+    left: 10%;
+    right: auto;
+    border-radius: 15px;
+    text-align: center;
+    background-color: rgba(200, 200, 200, 0.7);
+  }
+
+  h1#name {
+    position: static;
+    font-size: 5vw;
+    margin: 0;
+    padding: 10px 0;
+  }
+
+  /* All containers full width, stacked.
+     left padding = line(20px) + circle(25px) + gap(10px) = 55px so nib fits */
   .container {
     width: 100%;
     left: 0;
-    padding: 10px 20px;
+    padding: 10px 20px 10px 55px;
   }
 
   /* Move the timeline line to the left edge */
@@ -351,10 +376,10 @@ div#end.container::after {
     right: auto;
   }
 
-  /* Arrows all point left */
+  /* Nib flush against left edge of content box */
   .left::before,
   .right::before {
-    left: 30px;
+    left: 44px;
     right: auto;
     border-width: 10px 10px 10px 0;
     border-color: transparent rgba(255, 255, 255, 0.08) transparent transparent;
