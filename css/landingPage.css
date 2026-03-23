@@ -188,7 +188,7 @@ model.ModelContent {
   width: 100%;
   display: block;
   border-radius: 8px;
-  overflow: hidden;
+  overflow: visible;
 }
 
 /* Fallback: identical behaviour to img.ImageContent */
@@ -387,9 +387,9 @@ div#end.container::after {
   box-sizing: border-box;
 }
 
-/* Model entries get a wider column */
+/* Model entries use same column width as images */
 .content > a:has(.model-wrapper) {
-  grid-template-columns: 1fr 45%;
+  grid-template-columns: 1fr 30%;
 }
 
 .content h2 {
