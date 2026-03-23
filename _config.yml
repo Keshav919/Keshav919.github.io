@@ -1,0 +1,6 @@
+# GitHub Pages Jekyll config
+# Fix USDZ MIME type for <model> elements
+
+webrick:
+  mime_types:
+    usdz: model/vnd.usdz+zip
