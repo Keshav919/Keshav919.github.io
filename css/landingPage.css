@@ -161,94 +161,20 @@ div#launcher:hover > div#rightArrow{
 }
 
 div.TextContent {
+  flex: 7;
   min-width: 0;
   padding: 8px;
   box-sizing: border-box;
 }
 
 img.ImageContent {
-  width: 100%;
-  height: auto;
+  width: auto;
+  max-width: 30%;
   max-height: 20vw;
+  height: auto !important;
   border-radius: 8px;
   display: block;
-  object-fit: cover;
-}
-
-/* <model> container — natural sizing matching ImageContent */
-/* Wrapper that holds model + spinner + retry — owns the 30% width */
-.model-wrapper {
-  position: relative;
-  width: 100%;
-  display: block;
-}
-
-/* Model element — height driven by content when fallback shows */
-model.ModelContent {
-  width: 100%;
-  display: block;
-  border-radius: 8px;
-  overflow: hidden;
-}
-
-/* Fallback: identical behaviour to img.ImageContent */
-model.ModelContent img.ModelFallback {
-  width: 100%;
-  height: auto;
-  max-height: 20vw;
-  object-fit: cover;
-  border-radius: 8px;
-  display: block;
-}
-
-/* Spinning loader overlay */
-.model-spinner {
-  display: none;
-  position: absolute;
-  inset: 0;
-  align-items: center;
-  justify-content: center;
-  background: rgba(0, 0, 0, 0.25);
-  border-radius: 8px;
-  z-index: 2;
-}
-
-.model-spinner::after {
-  content: '';
-  width: 32px;
-  height: 32px;
-  border: 3px solid rgba(255, 255, 255, 0.3);
-  border-top-color: #ffffff;
-  border-radius: 50%;
-  animation: modelSpin 0.8s linear infinite;
-}
-
-@keyframes modelSpin {
-  to { transform: rotate(360deg); }
-}
-
-/* Retry button overlay */
-.model-retry {
-  display: none;
-  position: absolute;
-  inset: 0;
-  align-items: center;
-  justify-content: center;
-  background: rgba(0, 0, 0, 0.45);
-  border-radius: 8px;
-  z-index: 2;
-  cursor: pointer;
-  flex-direction: column;
-  gap: 6px;
-  color: #ffffff;
-  font-size: 0.8rem;
-  text-shadow: 0 1px 3px rgba(0,0,0,0.5);
-}
-
-.model-retry::before {
-  content: '↺';
-  font-size: 1.8rem;
-  line-height: 1;
+  flex-shrink: 0;
 }
   
 /* The actual timeline (the vertical ruler) */
@@ -377,19 +303,14 @@ div#end.container::after {
   box-sizing: border-box;
 }
 
-/* Grid layout: text takes remaining space, image/model gets fixed column */
+/* When content has an image, the anchor wraps both — make it flex */
 .content > a {
-  display: grid;
-  grid-template-columns: 1fr 30%;
+  display: flex;
+  flex-wrap: nowrap;
   align-items: center;
-  gap: 8px;
+  gap: 1px;
   width: 100%;
   box-sizing: border-box;
-}
-
-/* Model entries get a wider column */
-.content > a:has(.model-wrapper) {
-  grid-template-columns: 1fr 45%;
 }
 
 .content h2 {
@@ -479,20 +400,9 @@ div#end.container::after {
     left: 0;
   }
 
-  /* Images: constrain height in portrait */
+  /* Images: constrain to width-relative size */
   img.ImageContent {
-    max-height: 25vw;
-  }
-
-  model.ModelContent img.ModelFallback {
-    max-height: 25vw;
-  }
-
-  .model-wrapper {
-    width: 100%;
-  }
-
-  model.ModelContent {
-    width: 100%;
+    max-height: 20vw;
+    max-width: 35%;
   }
 }
