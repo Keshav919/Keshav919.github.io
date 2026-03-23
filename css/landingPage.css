@@ -13,7 +13,7 @@ html, body {
 
 div#landingPage {
     height: 100%;
-    background-image: url(../images/pb_grad_vert.png);
+    background-image: var(--landing-bg, url(../images/pb_grad_vert.png));
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
@@ -344,7 +344,7 @@ div#end.container::after {
 
   /* Shift landing page background to show more of the right side */
   div#landingPage {
-    background-position: 70% center;
+    background-position: 50% center;
   }
 
   /* Reposition name heading to center of screen */
