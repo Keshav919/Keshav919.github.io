@@ -6,6 +6,10 @@
     <script src="scripts/modelLoader.js" defer></script>
     <link rel="stylesheet" type="text/css" href="css/landingPage.css">
     <script src="https://kit.fontawesome.com/0ba4c143b0.js" crossorigin="anonymous"></script>
+    <!-- <model-viewer> library from https://modelviewer.dev/ -->
+    <script type="module" 
+      src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js">
+    </script>
 </head>
 
 
@@ -58,7 +62,13 @@
                 </div>
                 <div id="avp-wrapper" class="model-wrapper">
                   <model class="ModelContent" src="artifacts/avp_ap.usdz" data-loader="avp-wrapper">
-                    <img class="ModelFallback" src="images/avp.jpg">
+                      <model-viewer 
+                        src="artifacts/avp_ap.glb"
+                        alt="Apple Vision Pro"
+                        camera-controls
+                        auto-rotate
+                        style="width: 100%; max-width: 100%; aspect-ratio: 1 / 1; height: auto; display: block; border-radius: 8px;">
+                      </model-viewer>
                   </model>
                   <div class="model-spinner"></div>
                   <div class="model-retry">Retry</div>
