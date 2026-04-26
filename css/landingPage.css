@@ -111,11 +111,11 @@ div#menuList {
 }
 
 div#launcher{
-  height: 54px;
-  width: 54px;
+  height: 8vh;
+  width: 8vh;
   position: relative;
-  top: calc(70% - 27px);
-  left: calc(50% - 27px);
+  top: calc(70% - 4vh);
+  left: calc(50% - 4vh);
   background-color: rgba(200, 200, 200, 0.9);
   border-radius: 50%;
   transform: rotate(0deg);
@@ -124,34 +124,35 @@ div#launcher{
 }
 
 div#launcher:hover{
-  height: 58px;
-  width: 58px;
+  height: 10vh;
+  width: 10vh;
   position: relative;
-  top: calc(70% - 29px);
-  left: calc(50% - 29px);
+  top: calc(70% - 5vh);
+  left: calc(50% - 5vh);
   background-color: rgba(200, 200, 200, 0.9);
   border-radius: 50%;
   transform: rotate(0deg);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.5);
 }
 
 div#rightArrow{
   border: solid black;
-  border-width: 0 3px 3px 0;
-  top: calc(50% - 9px - 1.5px);
-  left: calc(50% - 12px - 1.5px);
+  border-width: 0 0.3vh 0.3vh 0;
+  top: calc(50% - 1.1vh);
+  left: calc(50% - 1.4vh);
   display: inline-block;
-  padding: 9px;
+  padding: 1vh;
   position: absolute;
   transform: rotate(-45deg);
 }
 
 div#launcher:hover > div#rightArrow{
   border: solid black;
-  border-width: 0 3px 3px 0;
-  top: calc(50% - 11px - 1.5px);
-  left: calc(50% - 14px - 1.5px);
+  border-width: 0 0.4vh 0.4vh 0;
+  top: calc(50% - 1.5vh);
+  left: calc(50% - 1.5vh);
   display: inline-block;
-  padding: 11px;
+  padding: 1vh;
   position: absolute;
   transform: rotate(-45deg);
 }
