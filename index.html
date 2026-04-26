@@ -10,6 +10,7 @@
     <script type="module" 
       src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js">
     </script>
+    <script src="scripts/modelRotation.js" defer></script>
 </head>
 
 
@@ -61,13 +62,14 @@
                   <p>Shipped Apple Vision Pro.</p>
                 </div>
                 <div id="avp-wrapper" class="model-wrapper">
-                  <model class="ModelContent" src="artifacts/avp_ap.usdz" data-loader="avp-wrapper">
-                      <model-viewer 
-                        src="artifacts/avp_ap.glb"
-                        alt="Apple Vision Pro"
-                        auto-rotate
-                        style="background-color: black; width: 100%; max-width: 100%; aspect-ratio: 1 / 1; height: auto; display: block; border-radius: 8px;">
-                      </model-viewer>
+                  <script src="scripts/modelRotation.js"></script>
+                  <model class="ModelContent" src="artifacts/avp_ap.usdz" data-loader="avp-wrapper" id="SpinnableModel">
+                    <model-viewer 
+                      src="artifacts/avp_ap.glb"
+                      alt="Apple Vision Pro"
+                      auto-rotate
+                      style="background-color: black; width: 100%; max-width: 100%; aspect-ratio: 1 / 1; height: auto; display: block; border-radius: 8px;">
+                    </model-viewer>
                   </model>
                   <div class="model-spinner"></div>
                   <div class="model-retry">Retry</div>
