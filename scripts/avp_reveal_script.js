@@ -87,17 +87,35 @@ function setupImmersiveExperience() {
   });
   videoOverlay.appendChild(trailerVideo);
 
-  // Stop playback when the video is un-docked (user exits fullscreen)
+  // Stop playback when the video is un-docked.
+  // Per Apple's own escape-room demo (WWDC26 "Explore immersive website
+  // environments in visionOS"), video docking on visionOS Safari goes
+  // through the STANDARD Fullscreen API (requestFullscreen / exitFullscreen),
+  // not the iOS native-player webkitbeginfullscreen/webkitendfullscreen
+  // events — those don't apply to this docking mechanism.
   function handleFullscreenExit() {
     var fsElement = document.fullscreenElement || document.webkitFullscreenElement;
     if (fsElement !== trailerVideo) {
       trailerVideo.pause();
       trailerVideo.currentTime = 0;
-      console.log("Exited fullscreen — trailerVideo paused and reset.");
+      console.log("Video un-docked — trailerVideo paused and reset.");
     }
   }
   document.addEventListener("fullscreenchange", handleFullscreenExit);
   document.addEventListener("webkitfullscreenchange", handleFullscreenExit);
+
+  // Also stop (and optionally undock) when the video finishes naturally,
+  // matching Apple's recommended pattern for triggering what comes next.
+  trailerVideo.addEventListener("ended", async function () {
+    try {
+      if (document.fullscreenElement === trailerVideo || document.webkitFullscreenElement === trailerVideo) {
+        await (document.exitFullscreen ? document.exitFullscreen() : document.webkitExitFullscreen());
+      }
+    } catch (err) {
+      console.error("exitFullscreen on ended failed:", err);
+    }
+  });
+
 
   // Button that docks the video onto the tagged screen in the scene.
   // requestFullscreen() on a <video> inside an immersive environment
@@ -146,6 +164,9 @@ function setupImmersiveExperience() {
     } else {
       btn.innerHTML = "<span>Enter Immersive Theatre</span>";
       demoButton.style.display = "none";
+      trailerVideo.pause();
+      trailerVideo.currentTime = 0;
+      console.log("Exited immersive mode — trailerVideo paused and reset.");
     }
   });
 }
