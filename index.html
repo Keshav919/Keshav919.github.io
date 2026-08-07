@@ -11,12 +11,18 @@
       src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js">
     </script>
     <script src="scripts/modelRotation.js" defer></script>
+    <!--
+      <!--
+       Passive ambient backdrop for the whole page (visionOS 26+ Safari).
+       If left in, visionOS Safari may surround visitors with the theatre
+       environment just from having this page open/in view.
+      -->
+    <link rel="spatial-backdrop" href="artifacts/Theatre.usdz">
 </head>
 
 
 <body>
     <div id="landingPage">
-      <link rel="spatial-backdrop" href="artifacts/Theatre.usdz">
         <script src="scripts/scroller.js"></script>
             <div id="mainHeadingHorizontal">
                 <h1 id="name">Keshav Rungta</h1>
@@ -28,6 +34,7 @@
               <a href="projects.html" target="_blank"><h1 id="menuOption"> Projects </h1></a>
               <a href="cooking.html" target="_blank"><h1 id="menuOption"> Cooking </h1></a>
               <a href="art.html" target="_blank"><h1 id="menuOption"> Art </h1></a>
+              <a href="avp_reveal.html"><h1 id="menuOption"> Immersive Space </h1></a>
               <a href="pages/Resume_remastered.pdf" title="resume" target="_blank"><h1 id="menuOption"> R&eacutesum&eacute </h1></a>
             </div>
         </div>
@@ -57,7 +64,7 @@
           </div>
           <div class="container left">
             <div class="content">
-              <a href="https://www.youtube.com/live/GYkq9Rgoj8E?si=w3Gi3KZzaEfLwSwf&t=4849">
+                <a href="avp_reveal.html">
                 <div class="TextContent">
                   <h2>2024</h2>
                   <p>Shipped Apple Vision Pro.</p>
@@ -65,17 +72,17 @@
                 <div id="avp-wrapper" class="model-wrapper">
                   <script src="scripts/modelRotation.js"></script>
                   <model class="ModelContent" src="artifacts/avp_ap.usdz" data-loader="avp-wrapper" id="SpinnableModel">
-                    <model-viewer 
-                      src="artifacts/avp_ap.glb"
-                      alt="Apple Vision Pro"
-                      auto-rotate
-                      style="background-color: black; width: 100%; max-width: 100%; aspect-ratio: 1 / 1; height: auto; display: block; border-radius: 8px;">
+                    <model-viewer
+                     src="artifacts/avp_ap.glb"
+                     alt="Apple Vision Pro"
+                     auto-rotate
+                     style="background-color: black; width: 100%; max-width: 100%; aspect-ratio: 1 / 1; height: auto; display: block; border-radius: 8px;">
                     </model-viewer>
                   </model>
                   <div class="model-spinner"></div>
                   <div class="model-retry">Retry</div>
                 </div>
-              </a>
+                </a>
             </div>
           </div>
           <div class="container right">
