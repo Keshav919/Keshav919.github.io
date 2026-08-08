@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Theatre Environment</title>
+   <link rel="stylesheet" href="css/avpRevealStyles.css">
+</head>
+<body>
+   <!-- No src set until we're about to go immersive, so no AR thumbnail renders on load -->
+   <model id="theatre"></model>
+
+   <!-- Reveal UI: huge headline + rounded frame with the action button(s) -->
+   <div id="revealOverlay">
+     <div id="revealText">One More Thing...</div>
+     <div id="revealFrame">
+       <button id="toggleImmersiveBtn">
+         <span id="toggleBtnSpinner" class="spinner"></span>
+         <span id="toggleBtnLabel">Watch Reveal</span>
+       </button>
+       <button id="startVideoBtn">Start Video</button>
+     </div>
+   </div>
+
+   <!-- Video surface used once we're immersive; docks onto the tagged screen mesh -->
+   <div id="immersiveVideoOverlay">
+     <video id="trailerVideo" src="artifacts/avpRevealWWDC2023.mp4" preload="auto" controls></video>
+   </div>
+
+   <script src="scripts/avpRevealScript.js"></script>
+</body>
+</html>
