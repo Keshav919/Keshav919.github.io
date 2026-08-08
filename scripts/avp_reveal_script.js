@@ -1,5 +1,6 @@
 var theatreModel = document.getElementById("theatre");
 var toggleImmersiveBtn = document.getElementById("toggleImmersiveBtn");
+var toggleBtnLabel = document.getElementById("toggleBtnLabel");
 var startVideoBtn = document.getElementById("startVideoBtn");
 var trailerVideo = document.getElementById("trailerVideo");
 
@@ -19,13 +20,23 @@ function buildImmersiveTransform() {
 }
 
 function setNonImmersiveUI() {
-  toggleImmersiveBtn.textContent = "Watch Reveal";
+  toggleImmersiveBtn.classList.remove("loading");
+  toggleImmersiveBtn.disabled = false;
+  toggleBtnLabel.textContent = "Watch Reveal";
   startVideoBtn.style.display = "none";
 }
 
 function setImmersiveUI() {
-  toggleImmersiveBtn.textContent = "Exit Immersive";
+  toggleImmersiveBtn.classList.remove("loading");
+  toggleImmersiveBtn.disabled = false;
+  toggleBtnLabel.textContent = "Exit Immersive";
   startVideoBtn.style.display = "inline-block";
+}
+
+function setLoadingUI() {
+  toggleImmersiveBtn.classList.add("loading");
+  toggleImmersiveBtn.disabled = true;
+  toggleBtnLabel.textContent = "Loading...";
 }
 
 // --- Single toggle button: enters immersive mode, or exits it ---
@@ -37,6 +48,7 @@ toggleImmersiveBtn.addEventListener("click", async function (e) {
 
   if (!isImmersive) {
     console.log("=== Click: Attempting requestImmersive() ===");
+    setLoadingUI();
     try {
       // Only load the model right before entering immersive — this keeps the
       // native <model> element source-less (and thumbnail-free) on page load.
