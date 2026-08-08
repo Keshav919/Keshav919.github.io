@@ -31,26 +31,7 @@ function supportsAppleModelImmersive() {
     // https://developer.apple.com/videos/play/wwdc2026/320/ (7:16 - "Detect feature availability")
     var flagSaysImmersive = document.immersiveEnabled === true;
 
-    // Defensive cross-check: this API is brand new and we've already been
-    // burned once by a single signal false-positiving on macOS (the old
-    // "does requestImmersive exist" check). WebXR (navigator.xr) is
-    // consistently documented as visionOS-only among Apple platforms -
-    // unsupported on macOS/iOS Safari - so require it to agree before we
-    // trust the immersive-capable branch. If the two signals disagree,
-    // fail closed (treat as NOT visionOS) rather than risk sending a
-    // non-immersive visitor into avpReveal.html again.
-    var hasWebXRSignal = !!navigator.xr;
-
-    if (flagSaysImmersive && !hasWebXRSignal) {
-      console.warn(
-        "[immersiveRouter] document.immersiveEnabled was true but navigator.xr is absent - " +
-        "signals disagree, treating this as NOT visionOS to be safe. " +
-        "Worth re-checking Apple's docs/this device once this API has settled."
-      );
-      return false;
-    }
-
-    return flagSaysImmersive && hasWebXRSignal;
+    return flagSaysImmersive;
   } catch (err) {
     return false;
   }
