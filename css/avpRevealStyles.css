@@ -7,7 +7,7 @@ body {
 
 /* Keep the model element in the DOM (needed to trigger immersive mode)
    but don't render it inline on the page. Its src is only set right
-   before entering immersive mode — see avp_reveal_script.js. */
+   before entering immersive mode — see avpRevealScript.js. */
 #theatre {
   display: none;
 }
