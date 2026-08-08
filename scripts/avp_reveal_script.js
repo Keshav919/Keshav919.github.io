@@ -81,16 +81,16 @@ toggleImmersiveBtn.addEventListener("click", async function (e) {
 // region in the USDZ (tagged in Blender).
 startVideoBtn.addEventListener("click", async function () {
   try {
-    await trailerVideo.play();
-    console.log("Video playback started.");
-  } catch (err) {
-    console.error("trailerVideo.play() failed:", err);
-  }
-  try {
     await trailerVideo.requestFullscreen();
     console.log("Requested fullscreen — video should dock onto the tagged screen.");
   } catch (err) {
     console.error("requestFullscreen failed:", err);
+  }
+  try {
+    await trailerVideo.play();
+    console.log("Video playback started.");
+  } catch (err) {
+    console.error("trailerVideo.play() failed:", err);
   }
 });
 
@@ -115,6 +115,28 @@ function handleFullscreenExit() {
     console.log("Video un-docked — trailerVideo paused and reset.");
   }
 }
+
+const dockedVideo = document.querySelector('video');
+
+function stopVideoCompletely() {
+    if (dockedVideo && !dockedVideo.paused) {
+        dockedVideo.pause();
+        // Force track reload if the audio stream hangs in Safari cache
+        dockedVideo.src = dockedVideo.src; 
+    }
+}
+
+// Triggered when the native back button collapses the theater view
+dockedVideo.addEventListener('webkitendfullscreen', stopVideoCompletely);
+
+// Triggered if visionOS background-throttles the tab layout 
+document.addEventListener('visibilitychange', () => {
+    if (document.hidden) {
+        stopVideoCompletely();
+    }
+});
+
+
 document.addEventListener("fullscreenchange", handleFullscreenExit);
 document.addEventListener("webkitfullscreenchange", handleFullscreenExit);
 
