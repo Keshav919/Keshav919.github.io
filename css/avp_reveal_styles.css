@@ -2,32 +2,86 @@ body {
   margin: 0;
   padding: 0;
   background-color: #000;
+  overflow: hidden;
 }
 
-#enterImmersiveBtn {
+/* Keep the model element in the DOM (needed to trigger immersive mode)
+   but don't render it inline on the page. Its src is only set right
+   before entering immersive mode — see avp_reveal_script.js. */
+#theatre {
+  display: none;
+}
+
+/* Overlay for "One More Thing..." reveal */
+#revealOverlay {
   position: fixed;
-  top: 1.5rem;
-  right: 1.5rem;
-  z-index: 9999;
-  background: rgba(0, 0, 0, 0.7);
-  border: none;
-  border-radius: 999px;
-  cursor: pointer;
-  padding: 0.6rem 1.2rem;
+  top: 6vh;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 5;
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+#revealText {
+  font-size: clamp(2.5rem, 6vw, 5rem);
+  font-weight: 700;
+  color: white;
+  font-family: Helvetica, sans-serif;
+  letter-spacing: -0.02em;
+  text-align: center;
+  margin: 0;
+}
+
+/* Rounded rectangle containing the capsule button(s) — at least half the
+   viewport wide and a quarter of it tall, per spec */
+#revealFrame {
+  box-sizing: border-box;
+  min-width: 50vw;
+  min-height: 25vh;
+  border-radius: 32px;
+  border: 10px solid rgba(255, 255, 255, 0.5);
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 2rem 2.8rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+  gap: 1.5rem;
 }
 
-#enterImmersiveBtn span {
-  color: white;
-  font-size: 1rem;
+/* Shared capsule button style — Watch Reveal / Exit Immersive and Start
+   Video are always rendered at the same size */
+#toggleImmersiveBtn,
+#startVideoBtn {
+  border-radius: 999px;
+  border: none;
+  background-color: white;
+  color: black;
+  font-size: 1.1rem;
   font-family: Helvetica, sans-serif;
+  font-weight: 600;
+  padding: 0.8rem 2rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
 }
 
-/* Video overlay for immersive mode */
+#toggleImmersiveBtn:hover,
+#startVideoBtn:hover {
+  background-color: #e8e8e8;
+}
+
+/* Start Video only appears once we're inside the immersive environment */
+#startVideoBtn {
+  display: none;
+}
+
+/* Video surface for immersive mode */
 #immersiveVideoOverlay {
-  position: absolute;
+  position: fixed;
   inset: 0;
   display: none;
   align-items: center;
@@ -41,21 +95,4 @@ body {
   max-width: 800px;
   border-radius: 12px;
   box-shadow: 0 0 40px rgba(0, 0, 0, 0.8);
-}
-
-#demoButton {
-  display: none;
-  position: fixed;
-  bottom: 3rem;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 20;
-  padding: 0.9rem 1.75rem;
-  font-size: 1.1rem;
-  font-family: Helvetica, sans-serif;
-  border: none;
-  border-radius: 999px;
-  background: white;
-  color: black;
-  cursor: pointer;
 }

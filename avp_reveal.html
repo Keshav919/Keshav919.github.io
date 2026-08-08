@@ -1,21 +1,27 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Theatre Environment</title>
-  <script src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
-  <link rel="stylesheet" href="css/avp_reveal_styles.css">
+   <title>Theatre Environment</title>
+   <link rel="stylesheet" href="css/avp_reveal_styles.css">
 </head>
 <body>
-  <model id="theatre" src="artifacts/Theatre.usdz">
-    <model-viewer
-      src="artifacts/Theatre.usdz"
-      alt="Theatre environment"
-      camera-controls
-      auto-rotate
-      style="background-color:black;">
-    </model-viewer>
-  </model>
+   <!-- No src set until we're about to go immersive, so no AR thumbnail renders on load -->
+   <model id="theatre"></model>
 
-  <script src="scripts/avp_reveal_script.js"></script>
+   <!-- Reveal UI: huge headline + rounded frame with the action button(s) -->
+   <div id="revealOverlay">
+     <div id="revealText">One More Thing...</div>
+     <div id="revealFrame">
+       <button id="toggleImmersiveBtn">Watch Reveal</button>
+       <button id="startVideoBtn">Start Video</button>
+     </div>
+   </div>
+
+   <!-- Video surface used once we're immersive; docks onto the tagged screen mesh -->
+   <div id="immersiveVideoOverlay">
+     <video id="trailerVideo" src="artifacts/TestVideo.MP4" preload="auto" controls></video>
+   </div>
+
+   <script src="scripts/avp_reveal_script.js"></script>
 </body>
 </html>
